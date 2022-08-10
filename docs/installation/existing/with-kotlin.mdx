@@ -1,0 +1,102 @@
+---
+sidebar-position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# With Kotlin
+
+CFLib is relatively easy to install using Gradle.
+
+<details>
+<summary>Step 1: Add the repository.</summary>
+
+In your root `build.gradle.kts` file (`your-project/build.gradle.kts`), find the `allprojects/repositories` block. It should look like this:
+
+```kotlin
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+    }
+}
+```
+
+Add this line at the end of the block:
+
+```kotlin
+maven("https://jitpack.io/")
+```
+
+It should now look like this:
+
+```kotlin
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+
+        maven("https://jitpack.io/")
+    }
+}
+```
+</details>
+
+<details>
+<summary>Step 2: Add the dependency.</summary>
+
+In your `TeamCode/build.gradle.kts` file, find the `dependencies` block. It should look something like this:
+
+```kotlin
+dependencies {
+    implementation(project(":FtcRobotController"))
+    annotationProcessor(files("lib/OpModeAnnotationProcessor.jar"))
+}
+```
+
+Add this line at the end of the block
+
+```kotlin
+implementation("com.github.AtomicRobotics3805:CFLib:0.0.1")
+```
+
+So it looks like this
+
+```groovy
+dependencies {
+    implementation(project(":FtcRobotController"))
+    annotationProcessor(files("lib/OpModeAnnotationProcessor.jar"))
+
+    implementation("com.github.AtomicRobotics3805:CFLib:0.0.1")
+}
+```
+
+</details>
+
+<details>
+<summary>Step 3: Sync Gradle</summary>
+
+<Tabs>
+  <TabItem value="android-studio" label="With Android Studio" default>
+
+  In the top right corner, press the `Sync Project with Gradle Files` button.
+
+  ![Sync Gradle Android Studio Button](https://github.com/AtomicRobotics3805/CFLib/blob/main/Documentation/ANDROID_STUDIO_sync-gradle.png?raw=true)
+
+  </TabItem>
+  <TabItem value="intellij-idea" label="With Intellij IDEA">
+
+  On the upper right toolbar, there should be a `Gradle` tab.
+
+  ![Open Gradle Tab](https://github.com/AtomicRobotics3805/CFLib/blob/main/Documentation/IDEA_gradle-tab.png?raw=true)
+
+  Then click the `Reload All Gradle Files` button.
+
+  ![Reload All Gradle Files](https://github.com/AtomicRobotics3805/CFLib/blob/main/Documentation/IDEA_sync-gradle.png?raw=true)
+
+  </TabItem>
+</Tabs>
+</details>

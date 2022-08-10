@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="372.91263mm"
+   height="424.14124mm"
+   viewBox="0 0 372.91263 424.14123"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="logo.svg"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.35151009"
+     inkscape:cx="-473.67062"
+     inkscape:cy="810.78755"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g74" />
+  <defs
+     id="defs2">
+    <filter
+       inkscape:label="Pixellize"
+       inkscape:menu="Pixel Tools"
+       inkscape:menu-tooltip="Reduce or remove antialiasing around shapes"
+       style="color-interpolation-filters:sRGB"
+       id="filter2987"
+       x="-0.020467538"
+       y="-0.018135699"
+       width="1.0409329"
+       height="1.0363356">
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1000 -500 "
+         id="feColorMatrix2985" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(2.4301592,8.5521594)">
+    <path
+       id="shape04"
+       style="fill:#addf7b;fill-opacity:1;stroke:#000000;stroke-width:53.8129;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter2987)"
+       d="M 692.52894,9.0448383 C 523.05902,8.8244353 443.7875,195.58554 422.83819,233.49323 318.03097,229.42522 192.94072,208.43492 89.940895,332.59321 -12.228724,467.80222 103.22828,694.41972 149.95777,747.56838 86.574878,842.70951 -7.487084,1007.1509 85.468391,1159.7642 c 94.369829,140.7638 290.166669,107.2687 335.032619,105.9055 55.78408,96.6179 126.35259,219.9568 286.84424,226.9931 182.09038,-29.5543 228.99764,-163.8577 269.35013,-229.4246 108.66092,11.9248 251.44752,21.3728 347.35762,-122.8152 81.5218,-146.20151 -44.8624,-333.3569 -75.4771,-392.85395 55.7279,-87.33804 157.2349,-251.17491 68.1016,-399.6503 C 1218.8729,195.11926 1038.7397,232.19704 975.6432,235.71156 921.393,145.1798 865.58173,15.537793 692.52894,9.0448383 Z"
+       sodipodi:nodetypes="ccccccccccccc"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.96130864,4.8550976)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:134.056px;font-family:'HoloLens MDL2 Assets';-inkscape-font-specification:'HoloLens MDL2 Assets';fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:10.038;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       x="180.74092"
+       y="107.47675"
+       id="text14054"><tspan
+         sodipodi:role="line"
+         id="tspan14052"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:134.056px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;text-anchor:middle;stroke-width:10.038;stroke-dasharray:none"
+         x="180.74092"
+         y="107.47675"
+         dy="80 0"
+         rotate="0 0 0">CF</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:134.056px;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';text-align:center;text-anchor:middle;stroke-width:10.038;stroke-dasharray:none"
+         x="180.74092"
+         y="307.25162"
+         id="tspan14056">LIB</tspan></text>
+  </g>
+</svg>

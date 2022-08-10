@@ -1,0 +1,12 @@
+# Installing Into an Existing Project
+
+import DocCardList from '@theme/DocCardList';
+import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+
+CFLib can also be installed into an existing project using [Gradle](https://gradle.org/).
+
+Most users use the `Groovy` syntax with Gradle, because it's older and [arguably] has better documentation.
+
+However, Gradle also supports the `Kotlin` syntax. CFLib can be added using either.
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
