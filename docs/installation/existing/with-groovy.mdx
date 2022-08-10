@@ -24,10 +24,11 @@ allprojects {
 }
 ```
 
-Add this line at the end of the block:
+Add these lines to the end of the block:
 
 ```groovy
 maven { url = 'https://jitpack.io/' }
+maven { url = 'https://maven.brott.dev' }
 ```
 
 It should now look like this:
@@ -40,6 +41,7 @@ allprojects {
         jcenter()
 
         maven { url = 'https://jitpack.io/' }
+        maven { url = 'https://maven.brott.dev' }
     }
 }
 ```
