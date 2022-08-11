@@ -97,7 +97,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Atomic Robotics. Built with Docusaurus. Hosted on Cloudflare Pages. Last updated ${new Date().getDate()}`,
+        copyright: `Copyright © ${new Date().getFullYear()} Atomic Robotics. Built with Docusaurus. Hosted on Cloudflare Pages. Last updated ${new Date().getUTCMonth()}-${new Date().getUTCDate()}-${new Date().getUTCFullYear} at ${new Date().getUTCHours()}:${new Date().getUTCMinutes()} UTC`,
       },
       prism: {
         theme: lightCodeTheme,
