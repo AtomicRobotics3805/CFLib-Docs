@@ -1,41 +1,37 @@
-# Website
+# CFLib Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+CFLib's documentation site (https://docs.atomicrobotics3805.org) is built using Facebook's free and open source static website creation project **[Docusaurus](https://docusaurus.io/)**.
 
-### Installation
+## Getting Started
 
-```
-$ yarn
-```
+To get starting with contributing to the docs, follow these steps:
 
-### Local Development
+### Clone the repository
 
-```
-$ yarn start
+```bash
+git clone https://github.com/AtomicRobotics3805/CFLib-Docs.git && cd CFLib-Docs
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Install npm dependencies
 
-### Build
-
-```
-$ yarn build
+```bash
+npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Start a development server so you can see your changes live
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+npm start
 ```
 
-Not using SSH:
+Once the server starts (this will take a little while), visit [http://localhost:3000](http://localhost:3000). The first time you open the page, Docusaurus has to build the site's frontend and backend, which takes a little bit. This will only happen once each time you start the server.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+## Development
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Docusaurus is built on MDX, which is a format similar to Markdown that incorporates React support. Learn more about the Docusaurus formatting [here](https://docusaurus.io/docs/markdown-features).
+
+## Contributing
+
+Once you have finished your modifications, you can [submit a pull request](https://github.com/AtomicRobotics3805/CFLib-Docs/compare) and, if we approve the changes, it will be merged and automatically published to the live sites:
+- https://docs.atomicrobotics3805.org/
+- https://cflib.pages.dev/
