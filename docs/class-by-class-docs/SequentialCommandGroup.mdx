@@ -12,12 +12,12 @@ The `SequentialCommandGroup` class is an extention of the [`CommandGroup`](Comma
 - Package: `com.atomicrobotics.cflib`
 
 ## Functions
-### start()
+### `start()`
 This method starts the first command in the list.
 - Declaration: `override fun`
 - Parameters: **none**
 - Returns: `Unit`
-### execute()
+### `execute()`
 This function starts the first command in the list if it hasn't been started already, then executes it, and checks to see if it's done. If it is done, it runs the command's end function and removes it from the list. It then starts the next command in the list.
 - Declaration: `override fun`
 - Parameters: **none**
