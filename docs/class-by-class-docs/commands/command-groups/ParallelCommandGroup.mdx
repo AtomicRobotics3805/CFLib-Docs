@@ -17,5 +17,29 @@ val mySequentialCommandGroup: SequentialCommandGroup
 ```
 The above code will run `FirstCommand` until it finishes, then `SecondCommand` until it finishes, and then will run both `FirstParallelCommand` and `SecondParallelCommand` at the same time until they are both finished.
 
-## Class
-- 
+## Root
+- Extends: [`CommandGroup`](CommandGroup)
+- Declaration: `class`
+
+## Variables
+### commandsToCancel
+- Default Value: `mutableMapOf()`
+- Type: `MutableMap<Command, Boolean>`
+- Declaration: `private val`
+
+## Functions
+### start()
+Starts each command in the list (at the same time)
+- Declaration: `override fun`
+- Parameters: **none**
+- Returns: `Unit`
+### execute()
+Starts each command in the list (if it hasn't been started already), then runs its [`execute()`](../Command.mdx/#execute) functionm then adds it to the [`commandsToCancel`](#commandstocancel) list if it's finished. The reason the commands can't be cancelled right away is because removing an item from a ist while iterating through the list leads to all sorts of problems.
+- Declaration: `override fun`
+- Parameters: **none**
+- Returns: `Unit`
+### clearCommands()
+Clears the commands that need to be cancelled. The reason the commands can't be cancelled in the [`execute`](#execute) function is because removing items from a list while iterating through the list leads to all sorts of problems.
+- Declaration: `private fun`
+- Parameters: **none**
+- Returns: `Unit`

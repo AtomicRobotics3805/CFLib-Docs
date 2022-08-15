@@ -5,7 +5,7 @@ sidebar-position: 1
 # CommandGroup
 The `CommandGroup` class represents a command that contains and manages other sub-commands. This is not generally used by the end user, but is instead a utility to provide common functionality for the [`SequentialCommandGroup`](SequentialCommandGroup) and [`ParallelCommandGroup`](ParallelCommandGroup) classes.
 
-## Class
+## Root
 - Extends: [`Command`](../Command)
 - Declaration: `abstract class`
 
@@ -22,10 +22,12 @@ The `CommandGroup` class represents a command that contains and manages other su
 ## Operator Overrides
 ### plusAssign(command: Command) 
 This function overrides the standard `plusAssign` command (`+=`) so users can add commands to the command group using `myCommandGroup += MyCommand()`
+- Declaration: `operator fun`
 - Parameters:
-    - `command`
+    - `command`:
         - Type: [`Command`](../Command)
         - Default value: `null`
+- Returns: `Unit`
 ### Command.unaryPlus()
 This function overrides [`Command`](../Command)'s `unaryPlus` function to allow users to create command groups using the following format:
 ```kotlin
@@ -34,14 +36,15 @@ commandGroup {
     +SecondCommand()
 }
 ```
+- Declaration: `operator fun`
 - Parameters: **none**
-
+- Returns: `Unit`
 ## Functions
 ### end(interrupted: Boolean)
 If the command group is ended forcefully, this function (which overrides [`Command.end(interrupted: Boolean)`](../Command/#endinterrupted-boolean)) will end all of the commands inside of the group.
 - Declaration: `override fun`
 - Parameters:
-    - interrupted:
+    - `interrupted`:
         - Type: `Boolean`
         - Default value: `null`
 - Returns: `Unit`

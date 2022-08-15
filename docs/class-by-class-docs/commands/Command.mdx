@@ -15,7 +15,7 @@ The same instance of a Command should not be scheduled more than once at the sam
 
 `Command` is an abstract class; it is meant to be extended.
 
-## Class
+## Root
 - Extends: **N/A**
 - Declaration: `abstract class`
 
@@ -56,7 +56,7 @@ This function is run once at the beginning of the command execution (not when it
 This function is run once at the end of the command, either when [`isDone`](#isdone) is true, another command using the same Subsystem is started, or when the OpMode ends.
 - Declaration: `open`
 - Parameters:
-    - interrupted:
+    - `interrupted`:
         - Type: `Boolean`
         - Default value: `null`
 - Returns: `Unit`
