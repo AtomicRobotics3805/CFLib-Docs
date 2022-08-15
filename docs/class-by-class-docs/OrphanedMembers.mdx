@@ -1,0 +1,30 @@
+---
+sidebar_position: 1
+slug: /OrphanedMembers
+---
+
+# Orphaned Members
+
+This page contains all of the various functions that aren't children of a class.
+
+## sequential(block: SequentialCommandGroup.() => Unit): SequentialCommandGroup
+This function returns a [sequential comand group](SequentialCommandGroup). It should be used as follows:
+```kotlin
+val mySequentialCommandGroup: SequentialCommandGroup
+    get() = sequential {
+        +FirstCommand()
+        +SecondCommand()
+    }
+```
+*Definition in [`com.atomicrobotics.cflib/CommandGroup.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/CommandGroup.kt#L12)*
+
+## parallel(block: ParallelCommandGroup.() -> Unit): ParallelCommandGroup
+This function returns a [parallel command group](ParallelCommandGroup). It should be used as follows:
+```kotlin
+val myParallelCommandGroup: ParallelCommandGroup
+    get() = parallel {
+        +FirstCommand()
+        +SecondCommand()
+    }
+```
+*Definition in [`com.atomicrobotics.cflib/CommandGroup.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/CommandGroup.kt#L25)*

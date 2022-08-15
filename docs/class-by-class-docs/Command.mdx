@@ -1,5 +1,5 @@
 ---
-sidebar-position: 1
+slug: /Command
 ---
 
 # Command
@@ -18,11 +18,12 @@ The same instance of a Command should not be scheduled more than once at the sam
 ## Root
 - Extends: **N/A**
 - Declaration: `abstract class`
+- Package: `com.atomicrobotics.cflib`
 
 ## Variables
 ### isDone
 - Default value: `false`
-- Type: property for [`_isDone`](#isdone)
+- Type: property for [`_isDone`](#_isdone)
 - Declaration: `private`
 ### _isDone
 - Default value: `false`
@@ -60,3 +61,5 @@ This function is run once at the end of the command, either when [`isDone`](#isd
         - Type: `Boolean`
         - Default value: `null`
 - Returns: `Unit`
+
+*Definition in [`com.atomicrobotics.cflib/Command.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/Command.kt#L12)*

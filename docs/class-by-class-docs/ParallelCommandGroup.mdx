@@ -1,5 +1,5 @@
 ---
-sidebar-position: 3
+slug: /CommandGroup/ParallelCommandGroup
 ---
 
 # ParallelCommandGroup
@@ -20,6 +20,7 @@ The above code will run `FirstCommand` until it finishes, then `SecondCommand` u
 ## Root
 - Extends: [`CommandGroup`](CommandGroup)
 - Declaration: `class`
+- Package: `com.atomicrobotics.cflib`
 
 ## Variables
 ### commandsToCancel
@@ -43,3 +44,5 @@ Clears the commands that need to be cancelled. The reason the commands can't be 
 - Declaration: `private fun`
 - Parameters: **none**
 - Returns: `Unit`
+
+*Definition in [`com.atomicrobotics.cflib/CommandGroup.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/CommandGroup.kt#L120)*

@@ -107,7 +107,7 @@ const config = {
       // algolia : {
       //   appId: 'R2IYF7ETH7', // Change to ID recieved in Email
       //   apiKey: '599cec31baffa4868cae4e79f180729b', // Change to API key recieved in Email
-      //   indexName: 'docsearch', // Probably will be in email
+      //   indexName: 'docsearch', // Change to IndexName recieved in email
       // },
       announcementBar: {
         id: 'search_not_yet_functional',

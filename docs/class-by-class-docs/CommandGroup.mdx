@@ -1,13 +1,14 @@
 ---
-sidebar-position: 1
+slug: /CommandGroup
 ---
 
 # CommandGroup
 The `CommandGroup` class represents a command that contains and manages other sub-commands. This is not generally used by the end user, but is instead a utility to provide common functionality for the [`SequentialCommandGroup`](SequentialCommandGroup) and [`ParallelCommandGroup`](ParallelCommandGroup) classes.
 
 ## Root
-- Extends: [`Command`](../Command)
+- Extends: [`Command`](Command)
 - Declaration: `abstract class`
+- Package: `com.atomicrobotics.cflib`
 
 ## Variables
 ### commands
@@ -25,11 +26,11 @@ This function overrides the standard `plusAssign` command (`+=`) so users can ad
 - Declaration: `operator fun`
 - Parameters:
     - `command`:
-        - Type: [`Command`](../Command)
+        - Type: [`Command`](Command)
         - Default value: `null`
 - Returns: `Unit`
 ### Command.unaryPlus()
-This function overrides [`Command`](../Command)'s `unaryPlus` function to allow users to create command groups using the following format:
+This function overrides [`Command`](Command)'s `unaryPlus` function to allow users to create command groups using the following format:
 ```kotlin
 commandGroup {
     +FirstCommand()
@@ -41,10 +42,12 @@ commandGroup {
 - Returns: `Unit`
 ## Functions
 ### end(interrupted: Boolean)
-If the command group is ended forcefully, this function (which overrides [`Command.end(interrupted: Boolean)`](../Command/#endinterrupted-boolean)) will end all of the commands inside of the group.
+If the command group is ended forcefully, this function (which overrides [`Command.end(interrupted: Boolean)`](Command/#endinterrupted-boolean)) will end all of the commands inside of the group.
 - Declaration: `override fun`
 - Parameters:
     - `interrupted`:
         - Type: `Boolean`
         - Default value: `null`
 - Returns: `Unit`
+
+*Definition in [`com.atomicrobotics.cflib/CommandGroup.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/CommandGroup.kt#L33)*
