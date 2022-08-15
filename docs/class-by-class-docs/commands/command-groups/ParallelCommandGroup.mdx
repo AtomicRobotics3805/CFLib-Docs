@@ -1,0 +1,21 @@
+---
+sidebar-position: 3
+---
+
+# ParallelCommandGroup
+The `ParallelCommandGroup` class runs a group of commands all at the same time. Since the commands in [`CommandScheduler`](../CommandScheduler) are already run in parallel, the primary functional use for this class is to place parallel groups *inside* [`SequentialCommandGroups`](SequentialCommandGroup), like this
+```kotlin
+val mySequentialCommandGroup: SequentialCommandGroup 
+    get() = sequential {
+        +FirstCommand()
+        +SecondCommand()
+        +parallel {
+            +FirstParallelCommand()
+            +SecondParallelCommand()
+        }
+    }
+```
+The above code will run `FirstCommand` until it finishes, then `SecondCommand` until it finishes, and then will run both `FirstParallelCommand` and `SecondParallelCommand` at the same time until they are both finished.
+
+## Class
+- 

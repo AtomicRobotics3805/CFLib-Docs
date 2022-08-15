@@ -104,6 +104,19 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['groovy', 'kotlin'],
       },
+      // algolia : {
+      //   appId: 'R2IYF7ETH7', // Change to ID recieved in Email
+      //   apiKey: '599cec31baffa4868cae4e79f180729b', // Change to API key recieved in Email
+      //   indexName: 'docsearch', // Probably will be in email
+      // },
+      announcementBar: {
+        id: 'search_not_yet_functional',
+        content:
+          'The Algolia search functionality is not yet functional on this site. It should be ready in 2-3 days. Until then, the site will be small enough that you can view it by hand.',
+        backgroundColor: '#FF6B4C',
+        textColor: '#000',
+        isCloseable: false,
+      },
     }),
 };
 

@@ -1,0 +1,62 @@
+---
+sidebar-position: 1
+---
+
+# Command
+The `Command` class represents a command; that is, a block of code that can be scheduled to run at a specific time.
+
+`Commands` are one of the core features of CFLib, and something that the developers worked very hard on perfecting. 
+
+Every command should represent one or more "action". 
+
+Commands are different from methods in that they are scheduled by the [CommandScheduler](CommandScheduler), and run at a specific time or when triggered by specific events.
+
+The same instance of a Command should not be scheduled more than once at the same time. 
+
+`Command` is an abstract class; it is meant to be extended.
+
+## Class
+- Extends: **N/A**
+- Declaration: `abstract class`
+
+## Variables
+### isDone
+- Default value: `false`
+- Type: property for [`_isDone`](#isdone)
+- Declaration: `private`
+### _isDone
+- Default value: `false`
+- Type: `Boolean`
+- Declaration: `open`
+### isStarted
+- Default value: `false`
+- Type: `Boolean`
+- Declaration: `private`
+### requirements
+- Default value: `arrayListOf()`
+- Type: `List<Subsystem>`
+- Declaration: `open`
+### interruptible
+- Default value: `true`
+- Type: `Boolean`
+- Declaration: `open`
+
+## Functions
+### execute()
+This function is run repeatedly every loop. [`isDone`](#isdone) is checked before this function is run, and this function will not run if [`isDone`](#isdone) is true.
+- Declaration: `open`
+- Parameters: **none**
+- Returns: `Unit`
+### start()
+This function is run once at the beginning of the command execution (not when it is scheduled). [`isDone`](#isDone) is checked after this function is run.
+- Declaration: `open`
+- Parameters: **none**
+- Returns: `Unit`
+### end(interrupted: Boolean)
+This function is run once at the end of the command, either when [`isDone`](#isdone) is true, another command using the same Subsystem is started, or when the OpMode ends.
+- Declaration: `open`
+- Parameters:
+    - interrupted:
+        - Type: `Boolean`
+        - Default value: `null`
+- Returns: `Unit`
