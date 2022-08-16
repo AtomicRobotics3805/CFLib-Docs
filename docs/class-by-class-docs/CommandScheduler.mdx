@@ -43,7 +43,7 @@ This function should be run repeatedly; once every loop. It adds commands if the
 - Parameters: **none**
 - Returns: `Unit`
 ### `scheduleCommand(command: Command)`
-`scheduleCommand` schedules a command. When multiple commands are scheduled, they are all run in parallel. Note that [`CommandGroups`](command-groups/CommandGroup.mdx) extend [`Command`](Command), so they can be scheduled the same way commands are scheduled.
+`scheduleCommand` schedules a command. When multiple commands are scheduled, they are all run in parallel. Note that [`CommandGroups`](CommandGroup) extend [`Command`](Command), so they can be scheduled the same way commands are scheduled.
 - Declaration: `fun`
 - Parameters:
     - `command`:
@@ -55,7 +55,7 @@ This function should be run repeatedly; once every loop. It adds commands if the
 - Declaration: `fun`
 - Parameters:
     - `subsystems`:
-        - Type: [`Subsystem`](../subsystems/Subsystem)
+        - Type: `Subsystem`
         - Default value: `null`
 - Returns: `Unit`
 ### `registerGamepads(vararg gamepads: GamepadEx)`
