@@ -3,5 +3,47 @@ slug: /Constants
 ---
 
 # Constants
+This object contains various "constant" values used by other classes. This object is not strictly necessary, but without it, we'd have to pass around the same few objects to countless different places. The word "constant" is used lightly because the variables in this class are not constant in the strict sense. They can change between OpModes, but stay the same during each OpMode. The first thing that an OpMode should do is assign values to these variables. Otherwise, many classes will break.
 
-*Definition in [`com.atomicrobotics.cflib/Constants.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/Constants.kt#L15)*
+## Root
+- Extends: **N/A**
+- Declaration: `object`
+- Package: `com.atomicrobotics.cflib`
+
+## Variables
+### `color`
+`color` is the color of the current alliance (blue or red). Not always necessary for TeleOp, but usually required for Autonomous.
+- Default value: `Color.UNKNOWN`
+- Type: `Color`
+- Declaration: `var`
+### `opMode`
+`opMode` is the currently running OpMode. Assigning this variable inside an OpMode should look like this:
+```kotlin
+Constants.opMode = this
+```
+- Default value: **N/A**
+- Type: `OpMode`
+- Declaration: `lateinit var`
+### `drive`
+`drive` is the object that controls the robot's drivetrain.
+- Defalt value: **N/A**
+- Type: `Drive`
+- Declaration: `lateinit var`
+### `endPose`
+`endPose` is the position of the robot at the end of an OpMode and is used to track positions between OpModes. It's not necessary if TeleOp doesn't require position information.
+- Default value: `null`
+- Type: `Pose2d?`
+- Declaration: `var`
+
+## Inner Classes
+### Color
+This class represents the possible alliance colors.
+#### Root
+- Extends: **N/A**
+- Declaration: `enum class`
+#### Values
+- BLUE
+- RED
+- UNKNOWN
+
+*Definition in [`com.atomicrobotics.cflib/Constants.kt`](https://github.com/AtomicRobotics3805/CFLib/blob/main/cflib/src/main/kotlin/com/atomicrobotics/cflib/Constats.kt#L15)*
