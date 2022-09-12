@@ -75,7 +75,7 @@ const config = {
             items: [
               {
                 label: 'Email',
-                href: 'mailto:AtomicRobotics3805@gmail.com',
+                href: 'mailto:CFLib3805@gmail.com',
               },
               {
                 label: 'Instagram',
