@@ -105,9 +105,9 @@ const config = {
         additionalLanguages: ['groovy', 'kotlin'],
       },
       algolia : {
-        appId: 'X5VCX1CWME', // Change to ID recieved in Email
-        apiKey: '6292493a8d15106c07c61bbf7d173ee1', // Change to API key recieved in Email
-        indexName: 'docsearch', // Change to IndexName recieved in email
+        appId: 'MYUO9NDMOA',
+        apiKey: 'efa810e28b023cc6e64dd29b05e70b38',
+        indexName: 'atomicrobotics3805',
       },
     }),
 };
