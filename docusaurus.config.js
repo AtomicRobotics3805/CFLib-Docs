@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CFLib Docs',
-  tagline: 'We do the hard work so you can do the fun work.',
+  tagline: 'Commands made simple',
   url: 'https://cflib.pages.dev',
   baseUrl: '/',
   onBrokenLinks: 'warn',
@@ -75,7 +75,7 @@ const config = {
             items: [
               {
                 label: 'Email',
-                href: 'mailto:CFLib3805@gmail.com',
+                href: 'mailto:AtomicRobotics3805@gmail.com?subject=[From CFLib Docs]',
               },
               {
                 label: 'Instagram',
@@ -85,6 +85,10 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/3805AtomicRobot',
               },
+              {
+                label: 'Website',
+                href: 'https://atomicrobotics3805.org',
+              }
             ],
           },
           {
@@ -97,7 +101,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Atomic Robotics. Built with Docusaurus. Hosted on Cloudflare Pages. Last updated ${new Date().toUTCString()}`,
+        copyright: `Copyright © ${new Date().getFullYear()} 3805 Atomic Robotics. Built with Docusaurus. Hosted on Cloudflare Pages. Last updated ${new Date().toUTCString()}`,
       },
       prism: {
         theme: lightCodeTheme,

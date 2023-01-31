@@ -48,56 +48,6 @@ allprojects {
 <details>
 <summary>Step 2: Add the dependencies.</summary>
 
-In your `build.dependencies.gradle` file, find the `dependencies` block. It should look similar to this:
-
-```groovy
-dependencies {
-    implementation 'org.firstinspires.ftc:Inspection:8.0.0'
-    implementation 'org.firstinspires.ftc:Blocks:8.0.0'
-    implementation 'org.firstinspires.ftc:Tfod:8.0.0'
-    implementation 'org.firstinspires.ftc:RobotCore:8.0.0'
-    implementation 'org.firstinspires.ftc:RobotServer:8.0.0'
-    implementation 'org.firstinspires.ftc:OnBotJava:8.0.0'
-    implementation 'org.firstinspires.ftc:Hardware:8.0.0'
-    implementation 'org.firstinspires.ftc:FtcCommon:8.0.0'
-    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.2.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'org.firstinspires.ftc:gameAssets-PowerPlay:1.0.0'
-}
-```
-
-:::caution
-
-Make sure you are in the *root* `build.dependencies.gradle` file, not a different one.
-
-:::
-
-Add this line to the end of the block
-
-```groovy
-implementation 'com.acmerobotics.dashboard:dashboard:0.4.4'
-```
-
-So that it looks like this
-
-```groovy
-dependencies {
-    implementation 'org.firstinspires.ftc:Inspection:8.0.0'
-    implementation 'org.firstinspires.ftc:Blocks:8.0.0'
-    implementation 'org.firstinspires.ftc:Tfod:8.0.0'
-    implementation 'org.firstinspires.ftc:RobotCore:8.0.0'
-    implementation 'org.firstinspires.ftc:RobotServer:8.0.0'
-    implementation 'org.firstinspires.ftc:OnBotJava:8.0.0'
-    implementation 'org.firstinspires.ftc:Hardware:8.0.0'
-    implementation 'org.firstinspires.ftc:FtcCommon:8.0.0'
-    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.2.0'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'org.firstinspires.ftc:gameAssets-PowerPlay:1.0.0'
-
-    implementation 'com.acmerobotics.dashboard:dashboard:0.4.4'
-}
-```
-
 In your `TeamCode/build.gradle` file, find the `dependencies` block. It should look something like this:
 
 :::caution
@@ -116,7 +66,7 @@ dependencies {
 Add these lines at the end of the block
 
 ```groovy
-implementation "com.github.AtomicRobotics3805:CFLib:0.2.0"
+implementation "com.github.AtomicRobotics3805:CFLib:1.0.0"
 implementation 'org.apache.commons:commons-math3:3.6.1'
 implementation 'com.acmerobotics.roadrunner:core:0.5.5'
 implementation 'com.github.NoahBres:MeepMeep:2.0.1'
@@ -138,27 +88,4 @@ dependencies {
 
 </details>
 
-<details>
-<summary>Step 3: Sync Gradle</summary>
-
-<Tabs>
-  <TabItem value="android-studio" label="With Android Studio" default>
-
-  In the top right corner, press the `Sync Project with Gradle Files` button.
-
-  ![Sync Gradle Android Studio Button](https://github.com/AtomicRobotics3805/CFLib/blob/main/Documentation/ANDROID_STUDIO_sync-gradle.png?raw=true)
-
-  </TabItem>
-  <TabItem value="intellij-idea" label="With Intellij IDEA">
-
-  On the upper right toolbar, there should be a `Gradle` tab.
-
-  ![Open Gradle Tab](https://github.com/AtomicRobotics3805/CFLib/blob/main/Documentation/IDEA_gradle-tab.png?raw=true)
-
-  Then click the `Reload All Gradle Files` button.
-
-  ![Reload All Gradle Files](https://github.com/AtomicRobotics3805/CFLib/blob/main/Documentation/IDEA_sync-gradle.png?raw=true)
-
-  </TabItem>
-</Tabs>
-</details>
+Finally, sync Gradle.
